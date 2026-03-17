@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flipcart</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navigation-bar">
+      <div class="flipcart-logo">
+        <a href="#"
+          ><img
+            src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/flipkart-095e08.svg"
+        /></a>
+
+        <div class="explore">
+          <a id="explore" href="#">Explore</a>
+          <a id="plus" href="#">Plus</a>
+          <a href="#"
+            ><img
+              src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/plus-brand-bc165b.svg"
+          /></a>
+        </div>
+      </div>
+      <button class="search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+      <input class="input" type="text" placeholder="Search for product..." />
+
+      <a href="#"
+        ><img
+          class="seller"
+          src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg"
+      /></a>
+      <p id="seller">Become a seller</p>
+
+      <a href="#"
+        ><img
+          id="cart"
+          src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-eed150.svg"
+      /></a>
+
+      <p id="seller">Cart</p>
+
+      <a href="#"
+        ><img
+          id="cart"
+          src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_3verticalDots-ea7819.svg"
+      /></a>
+
+      
+    <button onclick="loginButton()" class="login-btn">Login</button>
+
+    </div>
+
+   
+     <div class="login-page">
+      <input id="email-box" type="text" placeholder="Enter your email"/>
+      <input id="pass-box" type="password" placeholder="Enter your password"/>
+      <button onclick="submit()" id="loginBtn">Log in</button>
+     </div>
+  
+
+    <div class="second-nav">
+      <div id="second-nav-img">
+        <a href="#"><img src="first.webp" /></a>
+        <p id="offers-para">Top offers</p>
+      </div>
+      <div id="second-nav-img">
+        <a href="#"><img src="second.webp" /></a>
+        <p id="offers-para">Mobile & Tablets</p>
+      </div>
+      <div id="second-nav-img">
+        <a href="#"><img src="third.webp" /></a>
+        <p id="offers-para">Electronics</p>
+      </div>
+      <div id="second-nav-img">
+        <a href="#"><img src="fourth.webp" /></a>
+        <p id="offers-para">TVs & Applience</p>
+      </div>
+      <div id="second-nav-img">
+        <a href="#"><img src="fifth.webp" /></a>
+        <p id="offers-para">Fashion</p>
+      </div>
+      <div id="second-nav-img">
+        <a href="#"><img src="sixth.webp" /></a>
+        <p>Beauty</p>
+      </div>
+
+      <div id="second-nav-img">
+        <a href="#"><img src="seventh.webp" /></a>
+        <p id="offers-para">Home & Kitchen</p>
+      </div>
+      <div id="second-nav-img">
+        <a href="#"><img src="eighth.webp" /></a>
+        <p id="offers-para">Furniture</p>
+      </div>
+      <div id="second-nav-img">
+        <a href="#"><img src="ninth.webp" /></a>
+        <p id="offers-para">flights</p>
+      </div>
+      <div id="second-nav-img">
+        <a href="#"><img src="tenth.webp" /></a>
+        <p id="offers-para">Grocery</p>
+      </div>
+    </div>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img id="sliderImg" src="eleventh.webp">
+        <div class="text">London, Ebgland</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="twelth.webp">
+        <div class="text">Sunset in Romania</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="thirteen.webp">
+        <div class="text">New York, USA</div>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(0)"></span>
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+
+    <d+iv class="best-electronics">
+      <h2 id="best-electronics">Best Of Electronics</h2>
+
+      <div class="box-container">
+        <div class="box-1">
+          <img id="img" src="fifteen.jpeg" />
+          <p id="product-name">Best Trimer</p>
+          <h4 id="rupees">From ₹229</h4>
+        </div>
+        <div class="box-1">
+          <img id="img" src="sixteen.jpeg" />
+          <p id="product-name">Top sell dell</p>
+          <h4 id="rupees">From ₹249</h4>
+        </div>
+        <div class="box-1">
+          <img id="img" src="seventeen.jpeg" />
+          <p id="product-name">Printer</p>
+          <h4 id="rupees">From ₹3229</h4>
+        </div>
+        <div class="box-1">
+          <img id="img" src="eighteen.jpeg" />
+          <p id="product-name">Pendrive</p>
+          <h4 id="rupees">From ₹149</h4>
+        </div>
+        <div class="box-1">
+          <img id="img" src="nineteen.jpeg" />
+          <p id="product-name">Monitor</p>
+          <h4 id="rupees">From ₹8889</h4>
+        </div>
+        <div class="box-1">
+          <img id="img" src="twenty.jpeg" />
+          <p id="product-name">Camera</p>
+          <h4 id="rupees">From ₹5549</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="boxes">
+      <div class="box1 mainBox">
+        <div class="boxContent">
+          
+        <a href="men'sshirt.html"><div class="boxImg" style="background-image: url('men2.webp')"></div></a> 
+        <h3 id="names">Men's Sweetshirt</h3> 
+          <p id="see-para"><b>Min. 50% OFF</b></p>
+        </div>
+      </div>
+
+      <div class="box1 mainBox">
+        <div class="boxContent">
+    
+          <a href="saree.html"><div class="boxImg" style="background-image: url('women.webp')"></div></a> 
+          <h3 id="names">Women's Saree</h3> 
+          <p id="see-para"><b>Min. 40% OFF</b></p>
+        </div>
+      </div>
+
+      <div class="box1 mainBox">
+        <div class="boxContent">
+    
+          <a href="watch.html"><div class="boxImg" style="background-image: url('watch.webp')"></div></a> 
+          <h3 id="names">Wrist Watches</h3> 
+          <p id="see-para"><b>Min. 60% OFF</b></p>
+        </div>
+      </div>
+
+      <div class="box1 mainBox">
+        <div class="boxContent">
+    
+          <a href="chocolate.html"><div class="boxImg" style="background-image: url('kids.webp')"></div></a> 
+          <h3 id="names">kids dress</h3> 
+          <p id="see-para"><b>Upto 50% OFF</b></p>
+        </div>
+      </div>
+
+      <div class="box1 mainBox">
+        <div class="boxContent">
+    
+          <a href="shoes.html"><div class="boxImg" style="background-image: url('shoes.webp')"></div></a> 
+          <h3 id="names">Men's Stylish shoes</h3> 
+          <p id="see-para"><b>Upto 30% OFF</b></p>
+        </div>
+      </div>
+
+      <div class="box1 mainBox">
+        <div class="boxContent">
+    
+          <a href="jacket.html"><div class="boxImg" style="background-image: url('jacket.webp')"></div></a> 
+          <h3 id="names">Men's Jacket</h3> 
+          <p id="see-para"><b>Min. 50% OFF</b></p>
+        </div>
+      </div>
+
+      <div class="box1 mainBox">
+        <div class="boxContent">
+    
+          <a href="bag.html"><div class="boxImg" style="background-image: url('bag21.webp')"></div></a> 
+          <h3 id="names">Safari,Wildcraft</h3> 
+          <p id="see-para"><b>Min. 70% OFF</b></p>
+        </div>
+      </div>
+
+      <div class="box1 mainBox">
+        <div class="boxContent">
+    
+          <a href="lahanga.html"><div class="boxImg" style="background-image: url('lahanga.webp')"></div></a> 
+          <h3 id="names">Sabase Amazing deals</h3> 
+          <p id="see-para"><b>Min. 50% OFF</b></p>
+        </div>
+      </div>
+      </div>
+
+      <div class="baner">
+        <div class="many-items">
+
+          <div class="small-box">
+            <a href="womens2.html"><div id="box-img" style="background-image: url('bat.webp')"></div></a> 
+            <h4 id="names">Cricket bats</h4> 
+          <p id="see-para">Min. 45% Off</p>
+          </div>
+
+          <div class="small-box">
+            <a href="womens2.html"><div id="box-img" style="background-image: url('chocolate.webp')"></div></a> 
+            <h4 id="names">chocolates</h4> 
+          <p id="see-para">Min. 75% Off</p>
+          </div>
+
+          <div class="small-box">
+            <a href="womens2.html"><div id="box-img" style="background-image: url('clock.webp')"></div></a> 
+            <h4 id="names">Analog clock</h4> 
+          <p id="see-para">Min. 50% Off</p>
+          </div>
+
+          <div class="small-box">
+            <a href="womens2.html"><div id="box-img" style="background-image: url('glass.webp')"></div></a> 
+            <h4 id="names">Best Sun-glasses</h4> 
+          <p id="see-para">Upto 50%</p>
+          </div>
+
+        </div>
+
+        <div class="many-items">
+
+          <div class="small-box">
+            <a href="womens2.html"><div id="box-img" style="background-image: url('single3.webp')"></div></a> 
+            <h4 id="names">Artificial plants</h4> 
+          <p id="see-para">Min. 45% Off</p>
+          </div>
+
+          <div class="small-box">
+            <a href="womens2.html"><div id="box-img" style="background-image: url('iphone.webp')"></div></a> 
+            <h4 id="names">Iphone</h4> 
+          <p id="see-para">Min. 75% Off</p>
+          </div>
+
+          <div class="small-box">
+            <a href="womens2.html"><div id="box-img" style="background-image: url('dress.webp')"></div></a> 
+            <h4 id="names">Women's Ethnic Sets</h4> 
+          <p id="see-para">Min. 50% Off</p>
+          </div>
+
+          <div class="small-box">
+            <a href="womens2.html"><div id="box-img" style="background-image: url('sliper.webp')"></div></a> 
+            <h4 id="names">Men's Sliper</h4> 
+          <p id="see-para">Min. 50% Off</p>
+          </div>
+          </div>
+
+        </div>
+
+      
+        <div class="footer">
+
+          <div class="footer1">
+            <div class="about">ABOUT</div>
+            <a id="ancor">Contact Us</a>
+            <a id="ancor">About Us</a>
+            <a id="ancor">Careers</a>
+            <a id="ancor">Flipcart Stories</a>
+            <a id="ancor">Press</a>
+            <a id="ancor">Flipcart Wholesale</a>
+            <a id="ancor">Clear trip</a>
+            <a id="ancor">Corporate Information</a>
+          </div>
+          <div class="footer2">
+            <div class="about">HELP</div>
+            <a id="ancor">Payments</a>
+            <a id="ancor">Shipping</a>
+            <a id="ancor">Cancellation</a>
+            <a id="ancor">FAQ</a>
+            <a id="ancor">Report Infringement</a>
+          </div>
+          <div class="footer3">
+            <div class="about">CONSUMER POLICY</div>
+            <a id="ancor">Cancellation & Return</a>
+            <a id="ancor">Term Of Use</a>
+            <a id="ancor">Security</a>
+            <a id="ancor">Privacy</a>
+            <a id="ancor">Sitemap</a>
+            <a id="ancor">Grievance Redressal</a>
+            <a id="ancor">EPR compliance</a>
+          </div>
+          <div class="footer4">
+            <div class="about">SOCIAL</div>
+            <a id="ancor">facebook</a>
+            <a id="ancor">Twitter</a>
+            <a id="ancor">You tube</a>
+          </div>
+          <div class="footer5">
+            <div class="about">MAIL US</div>
+            <a id="ancor">Flipcart Internet Private Limited</a>
+            <a id="ancor">Building Alyssa ,Begonia &</a>
+            <a id="ancor">Clove Embassy Tech Village</a>
+            <a id="ancor">Outer Ring Road Devarabeesanahailli Village</a>
+            <a id="ancor">Bengaluru,560103</a>
+            <a id="ancor">Karnataka ,India</a>
+
+          </div>
+          <div class="footer6">
+          <div class="about">REGISTERED OFFICE ADDRESS</div>
+          <a id="ancor">Flipcart Internet Private Limited</a>
+          <a id="ancor">Building Alyssa ,Begonia &</a>
+          <a id="ancor">Clove Embassy Tech Village</a>
+          <a id="ancor">Outer Ring Road Devarabeesanahailli Village</a>
+          <a id="ancor">Bengaluru,560103</a>
+          <a id="ancor">Karnataka ,India</a>
+          <a id="ancor">CIN : US1109K4575YY5754</a>
+          <a id="ancor" style="color:blue"><B>Telephone: 044-45614700</B></a>
+        </div>
+
+        </div>
+
+        <div class="last-footer">
+          <div class="footer-element">
+          <div id="logo-ancor">
+            <a href="#"><img id="logo" src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/sell-image-9de8ef.svg"></a>
+            <p>Become a seller</p>
+          </div>
+
+          <div id="logo-ancor">
+            <a href="#"><img id="logo" src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/advertise-image-866c0b.svg"></a>
+            <p>Advertise</p>
+          </div>
+
+          <div id="logo-ancor">
+            <a href="#"><img id="logo" src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/gift-cards-image-d7ff24.svg"></a>
+            <p>Gift Card</p>
+          </div>
+
+          <div id="logo-ancor">
+            <a href="#"><img id="logo" src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/help-centre-image-c4ace8.svg"></a>
+            <p>Help Center</p>
+          </div>
+
+          <div id="logo-ancor">
+            <a href="#"><img id="logo" src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/help-centre-image-c4ace8.svg"></a>
+            <p>2007-2023 Flipcart.com</p>
+          </div>
+
+          <div id="logo-ancor">
+            <img id="card" src="card.jpeg">
+            
+          </div>
+          </div>
+        </div>
+
+     
+
+    <script src="script.js"></script>
+  </body>
+</html>
